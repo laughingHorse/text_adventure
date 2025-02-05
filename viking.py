@@ -61,7 +61,7 @@ def iceland():
         st.rerun()
 
 def end_game():
-    slow_print("You live a hard life with your goat and chickens, frostbite takes you nose. You are never truly accepted. Your saga ends here.")
+    slow_print("You live a hard life with your goat and chickens, frostbite takes your nose. You are never truly accepted. Your saga ends here.")
     if st.button("Restart Game"):
         st.session_state.page = "intro"
         st.rerun()
