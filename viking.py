@@ -37,7 +37,7 @@ def main():
         end_game()
 
 def intro():
-    slow_print("You are Luke Bealesson, a handsome Viking warrior cast out from Norway for a crime you may or may not have committed... Let's face it you did commit the crime but ask for forgiveness not permission ammiright?")
+    slow_print("You are Mo Azmattsson, a handsome Viking warrior cast out from Norway for a crime you may or may not have committed... Let's face it you did commit the crime but ask for forgiveness not permission ammiright?")
     if st.button("Continue"):
         st.session_state.page = "choose_path"
         st.rerun()
