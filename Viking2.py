@@ -6,7 +6,7 @@ if 'scene' not in st.session_state: st.session_state.scene = "intro" st.session_
 
 def make_choice(choice, next_scene): st.session_state.choices_made.append(choice) st.session_state.scene = next_scene st.experimental_rerun()
 
-Game Scenes
+# Game Scenes
 
 def intro(): st.title("Blood & Shadow: The Curse of the Volga") st.write("A Viking tale of fate, war, and the supernatural.") st.write("You are Eirik Thorsson, a Viking warrior who has returned home to a simple farm life. But the past does not rest.") st.write("One morning, you wake up to a strange whisper on the wind.")
 
@@ -44,7 +44,6 @@ elif last_choice == "Sacrifice":
 st.write("The river remembers. Always.")
 st.button("Restart", on_click=lambda: st.session_state.update(scene="intro", choices_made=[]))
 
-Scene Router
+# Scene Router
 
 if st.session_state.scene == "intro": intro() elif st.session_state.scene == "scene_1": scene_1() elif st.session_state.scene == "scene_2": scene_2() elif st.session_state.scene == "scene_3": scene_3() elif st.session_state.scene == "ending": ending()
-
