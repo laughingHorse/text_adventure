@@ -1,6 +1,6 @@
 import streamlit as st
 
-# Game State Management
+# Managing game state
 
 if 'scene' not in st.session_state: st.session_state.scene = "intro" st.session_state.choices_made = []
 
@@ -46,4 +46,6 @@ st.button("Restart", on_click=lambda: st.session_state.update(scene="intro", cho
 
 # Scene Router
 
-if st.session_state.scene == "intro": intro() elif st.session_state.scene == "scene_1": scene_1() elif st.session_state.scene == "scene_2": scene_2() elif st.session_state.scene == "scene_3": scene_3() elif st.session_state.scene == "ending": ending()
+scene_functions = { "intro": intro, "scene_1": scene_1, "scene_2": scene_2, "scene_3": scene_3, "ending": ending }
+
+scene_functionsst.session_state.scene
