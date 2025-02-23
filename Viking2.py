@@ -1,6 +1,6 @@
 import streamlit as st
 
-Game State Management
+# Game State Management
 
 if 'scene' not in st.session_state: st.session_state.scene = "intro" st.session_state.choices_made = []
 
